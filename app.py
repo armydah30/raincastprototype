@@ -7,9 +7,6 @@ app.debug = False
 
 
 
-
-
-
 #Index
 @app.route('/')
 def index():
