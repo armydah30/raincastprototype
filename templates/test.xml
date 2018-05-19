@@ -12,6 +12,7 @@
        <prompt>
     <audio src="static/Intro.wav"/>
   </prompt>
+   <goto next="#menu"/>
      </block>
 </form>
 
