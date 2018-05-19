@@ -2,6 +2,15 @@
 
 {% block content %}
 
+<form id="credits">
+     <block>
+       <prompt>
+            <audio src="static/credit.wav"/>
+       </prompt>
+         <goto next="#weathermenu"/>
+     </block>
+</form>
+
 <menu id="weathermenu" dtmf="true">
    <prompt>
      <audio src="static/transcript.wav"/>
@@ -29,7 +38,7 @@
 </form>
 
 <menu id="more" dtmf="true">
-  
+
    <prompt><audio src="static/more.wav"/> </prompt>
     <choice next="#weathermenu"/>
     <choice next="#goodbye"/>
