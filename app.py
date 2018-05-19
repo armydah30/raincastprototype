@@ -35,6 +35,15 @@ def tamale():
 def bolgatanga():
     return render_template('bolgatanga.xml')
 
+@app.route('/tamale2')
+def tamale2():
+    return render_template('tamale2.xml')
+
+@app.route('/bolgatanga2')
+def bolgatanga2():
+    return render_template('bolgatanga2.xml')
+
+
 @app.route('/login')
 def login():
     return render_template('login.html')

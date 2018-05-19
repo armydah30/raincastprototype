@@ -2,38 +2,32 @@
 
 {% block content %}
 
-
-<form id="intro">
+<form id="welcome">
      <block>
        <prompt>
-    <audio src="static/menuF.wav"/>
-  </prompt>
-   <goto next="#menu"/>
+            <audio src="static/welcomeF.wav"/>
+       </prompt>
+   <goto next="#locationmenu"/>
      </block>
 </form>
 
-<menu id="menu" dtmf="true">
-<prompt><audio src="static/menuF.wav"/> </prompt>
-<choice next="#myform1"/>
-<choice next="#myform2"/>
+<menu id="locationmenu" dtmf="true">
+   <prompt><audio src="static/locationmenuF.wav"/> </prompt>
+    <choice next="#optionTamale"/>
+    <choice next="#optionBolga"/>
 </menu>
 
-<form id="myform1">
-     <block>
-       <prompt>
-    <audio src="static/myform1.wav"/>
-  </prompt>
+<menu id="optionTamale" dtmf="true">
+   <prompt><audio src="static/optionTamaleF.wav"/> </prompt>
+    <choice next="#locationmenu"/>
+    <choice next="/tamale2"/>
+</menu>
 
-     </block>
-</form>
+<menu id="optionBolga" dtmf="true">
+   <prompt><audio src="static/optionBolgatangaF.wav"/> </prompt>
+    <choice next="#locationmenu"/>
+    <choice next="/bolgatanga2"/>
+</menu>
 
-<form id="myform2">
-     <block>
-       <prompt>
-    <audio src="static/myform2.wav"/>
-  </prompt>
-
-     </block>
-</form>
 
 {% endblock %}
