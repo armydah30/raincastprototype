@@ -4,7 +4,7 @@
 
 <menu id="weathermenu" dtmf="true">
    <prompt>
-     <audio src="static/weathermenu.wav"/>
+     <audio src="static/transcript.wav"/>
     </prompt>
     <choice next="#currentweather"/>
     <choice next="#daysforecast"/>
@@ -29,7 +29,7 @@
 </form>
 
 <menu id="more" dtmf="true">
-     <break time="500"/>
+
    <prompt><audio src="static/more.wav"/> </prompt>
     <choice next="#weathermenu"/>
     <choice next="#goodbye"/>
