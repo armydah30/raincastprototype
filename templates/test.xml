@@ -10,8 +10,8 @@
 
 <menu id="menu" dtmf="true">
   <prompt>
-    <audio src="static/langauge.wav"/>
-    <audio src="static/langaugeF.wav"/>
+    <audio src="static/language.wav"/>
+    <audio src="static/languageF.wav"/>
   </prompt>
    <choice next="#welcome"/>
    <choice next="#submit"/>
