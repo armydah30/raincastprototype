@@ -1,86 +1,18 @@
-<?xml version="1.0"?>
-<vxml version="2.1">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vxml SYSTEM "http://www.w3.org/TR/voicexml21/vxml.dtd">
+<vxml xmlns="http://www.w3.org/2001/vxml"
+  version="2.1"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.w3.org/2001/vxml
+  http://www.w3.org/TR/2007/REC-voicexml21-20070619/vxml.xsd">
+<property name="inputmodes" value="dtmf" />
 
 <form id="intro">
      <block>
     <audio src="static/Intro.wav"/>
-    <break time="500"/>
-        <goto next="#menu"/>
+    
      </block>
 </form>
 
-<menu id="menu" dtmf="true">
-<prompt>For english press 1.   <audio src="static/menu1F.wav"/>  </prompt>
-<choice next="#menu1"/>
-<choice next="#menu1"/>
-</menu>
-
-  <menu id="menu1" dtmf="true">
-    <prompt>
-     To get the current weather, press 1. To get the forecasts for tomorrow, press 2. To get the forecasts for the next 3 days, press 3.
-    </prompt>
-    <choice next="#form1"/>
-    <choice next="#form2"/>
-    <choice next="#form3"/>
-  </menu>
-
- <catch event="noinput nomatch">
-        Please select an option.
-    <reprompt/>
- </catch>
-
-
- <catch event="noinput nomatch"  count="3" >
-   We are unable to get a valid response from you. Please try back later.
-    <disconnect/>
- </catch>
-
-  <form id="form1">
-    <block>
-      <prompt>The current temperature is 35 degrees celsius and cloudy</prompt>
- <break time="500"/>
-      <goto next="#furtherInstructions"/>
-    </block>
-  </form>
-
-  <form id="form2">
-    <block>
-      <prompt>There will be no rain tomorrow. The weather will be mostly cloudy and very warm.</prompt>
-  <break time="500"/>
-  <goto next="#furtherInstructions"/>
-    </block>
-  </form>
-
-  <form id="form3">
-    <block>
-      <prompt>There will be no rain. The weather will be mostly sunny and very warm</prompt>
- <break time="500"/>
-  <goto next="#furtherInstructions"/>
-    </block>
-  </form>
-
-
-  <menu id="menu2" dtmf="true">
-    <prompt>
-   If you require additional weather data, press 1. To quit, press 2
-    </prompt>
-    <choice next="#menu1"/>
-    <choice next="#farewell"/>
-  </menu>
-
-  <form id="furtherInstructions">
-    <block>
-      <prompt>Weather forecast is brought to you by AccuWeather</prompt>
- <break time="500"/>
-      <goto next="#menu2"/>
-    </block>
-  </form>
-
-<form id="farewell">
-    <block>
-      <prompt>Thanks for using our service. Good bye.</prompt>
-      <disconnect/>
-    </block>
-  </form>
 
 </vxml>
