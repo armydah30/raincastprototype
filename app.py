@@ -4,9 +4,10 @@ from flask_mysqldb import MySQL
 from wtforms import Form, StringField, TextAreaField, PasswordField, validators
 from passlib.hash import sha256_crypt
 from functools import wraps
+import os
 
 app = Flask(__name__)
-app.debug = True
+app.debug = False
 
 #config mySQL
 app.config['MYSQL_HOST'] = 'localhost'
@@ -45,5 +46,5 @@ def vxml():
 
 
 if __name__ == '__main__':
-    app.secret_key='secret123'
-    app.run()
+	port = int(os.environ.get('PORT', 5000)) #The port to be listening to — hence, the URL must be <hostname>:<port>/ inorder to send the request to this program
+	app.run(host='0.0.0.0', port=port)#Start listening
