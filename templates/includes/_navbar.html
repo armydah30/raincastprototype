@@ -1,0 +1,23 @@
+<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button">Mr<b>Meteo</b></a>
+
+      <div class="w3-right w3-hide-small menu">
+
+
+          {% if session.logged_in %}
+            <a class="w3-bar-item w3-button" href="/dashboard">Dashboard</a>
+            <a class="w3-bar-item w3-button" href="/dashboard">GetWeather</a>
+            <a class="w3-bar-item w3-button" href="/about">VXML</a>
+            <a class="w3-bar-item w3-button" href="/weatherdata">Meteo Data</a>
+            <a class="w3-bar-item w3-button" href="/logout">Logout</a>
+          {% else %}
+            <a class="w3-bar-item w3-button" href="/">Home </a>
+            <a class="w3-bar-item w3-button" href="/vxml">VXML</a>
+            <a class="w3-bar-item w3-button" href="/register">Register </a>
+            <a class="w3-bar-item w3-button" href="/login">Login</a>
+          {% endif %}
+
+      </div>
+
+
+    </div>

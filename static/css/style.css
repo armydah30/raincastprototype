@@ -1,0 +1,65 @@
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+		width: 200px;
+}
+.footer {
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.row{
+ padding-right: 5px;
+}
+
+.dropdown-content {
+    color: black;
+    background-color: #f1f1f1;
+
+}
+
+.menu{
+  font-size: 12px;
+}
+.mycontainer {
+	margin-top: 100px;
+	margin-right: 500px;
+	margin-left: 500px;
+}
+
+.mycontainer2 {
+	margin-top: 30px;
+	margin-right: 500px;
+	margin-left: 500px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+.data{
+padding-left: 40px;
+}
+.data2{
+padding-left: 100px;
+padding-top: 20px;
+padding-bottom: 0px;
+}
