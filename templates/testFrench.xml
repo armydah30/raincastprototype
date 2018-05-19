@@ -14,8 +14,26 @@
 
 <menu id="menu" dtmf="true">
 <prompt><audio src="static/menuF.wav"/> </prompt>
-<choice next="#intro"/>
-<choice next="#intro"/>
+<choice next="#myform1"/>
+<choice next="#myform2"/>
 </menu>
+
+<form id="myform1">
+     <block>
+       <prompt>
+    <audio src="static/myform1.wav"/>
+  </prompt>
+   <goto next="#intro"/>
+     </block>
+</form>
+
+<form id="myform2">
+     <block>
+       <prompt>
+    <audio src="static/myform2.wav"/>
+  </prompt>
+   <goto next="#intro"/>
+     </block>
+</form>
 
 {% endblock %}
