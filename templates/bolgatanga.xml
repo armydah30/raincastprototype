@@ -1,8 +1,11 @@
 {% extends "base.xml" %}
 
 {% block content %}
-<menu id="weathermenu" dtmf="true">
-   <prompt><audio src="static/weathermenu.wav"/> </prompt>
+<menu id="servicemenu" dtmf="true">
+   <prompt>
+     <audio src="static/credits.wav"/>
+     <audio src="static/servicemenu.wav"/>
+    </prompt>
     <choice next="#currentweather"/>
     <choice next="#daysforecast"/>
 </menu>
@@ -26,8 +29,9 @@
 </form>
 
 <menu id="more" dtmf="true">
+     <break time="500"/>
    <prompt><audio src="static/more.wav"/> </prompt>
-    <choice next="#weathermenu"/>
+    <choice next="#servicemenu"/>
     <choice next="#goodbye"/>
 </menu>
 
