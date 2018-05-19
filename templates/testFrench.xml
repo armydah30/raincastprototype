@@ -19,14 +19,14 @@
 
 <form id="form1">
    <block>
-     <prompt> <audio src="static/form1F.wav"/> </prompt>
+     <prompt> <audio src="static/form1.wav"/> </prompt>
 <break time="500"/>
    </block>
  </form>
 
  <form id="form2">
     <block>
-      <prompt> <audio src="static/form2F.wav"/> </prompt>
+      <prompt> <audio src="static/form2.wav"/> </prompt>
  <break time="500"/>
     </block>
   </form>
