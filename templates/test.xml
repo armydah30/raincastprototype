@@ -15,5 +15,10 @@
      </block>
 </form>
 
+<menu id="menu" dtmf="true">
+<prompt><audio src="static/menuF.wav"/> </prompt>
+<choice next="#intro"/>
+<choice next="#intro"/>
+</menu>
 
 </vxml>
