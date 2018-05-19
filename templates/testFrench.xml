@@ -2,33 +2,20 @@
 
 {% block content %}
 
+
 <form id="intro">
      <block>
-      <prompt>
-    <audio src="static/introF.wav"/>
-      </prompt>
-     <goto next="#menu"/>
+       <prompt>
+    <audio src="static/Intro.wav"/>
+  </prompt>
+   <goto next="#menu"/>
      </block>
 </form>
 
 <menu id="menu" dtmf="true">
 <prompt><audio src="static/menuF.wav"/> </prompt>
-<choice next="#form1"/>
-<choice next="#form2"/>
+<choice next="#intro"/>
+<choice next="#intro"/>
 </menu>
-
-<form id="form1">
-   <block>
-     <prompt> <audio src="static/form1.wav"/> </prompt>
-<break time="500"/>
-   </block>
- </form>
-
- <form id="form2">
-    <block>
-      <prompt> <audio src="static/form2.wav"/> </prompt>
- <break time="500"/>
-    </block>
-  </form>
 
 {% endblock %}
