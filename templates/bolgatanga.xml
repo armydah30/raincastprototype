@@ -1,18 +1,10 @@
 {% extends "base.xml" %}
 
 {% block content %}
-<form id="credits">
-     <block>
-       <prompt>
-            <audio src="static/credits.wav"/>
-       </prompt>
-          <goto next="#servicemenu"/>
-     </block>
-</form>
 
-<menu id="servicemenu" dtmf="true">
+<menu id="weathermenu" dtmf="true">
    <prompt>
-     <audio src="static/servicemenu.wav"/>
+     <audio src="static/weathermenu.wav"/>
     </prompt>
     <choice next="#currentweather"/>
     <choice next="#daysforecast"/>
@@ -39,7 +31,7 @@
 <menu id="more" dtmf="true">
      <break time="500"/>
    <prompt><audio src="static/more.wav"/> </prompt>
-    <choice next="#servicemenu"/>
+    <choice next="#weathermenu"/>
     <choice next="#goodbye"/>
 </menu>
 
@@ -50,4 +42,6 @@
        </prompt>
      </block>
 </form>
+
+
 {% endblock %}
