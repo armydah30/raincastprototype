@@ -29,7 +29,7 @@
 </form>
 
 <menu id="more" dtmf="true">
-   <break time="500"/>
+  
    <prompt><audio src="static/more.wav"/> </prompt>
     <choice next="#weathermenu"/>
     <choice next="#goodbye"/>
