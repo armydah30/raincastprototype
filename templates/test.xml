@@ -24,7 +24,7 @@
 
 <form id="submit">
 <block>
- <submit next="/vxml2" method="post" />
+ <submit next="/vxml2" />
 </block>
 </form>
 
