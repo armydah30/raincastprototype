@@ -4,88 +4,16 @@
 
 <form id="intro">
      <block>
+      <prompt>
     <audio src="static/introF.wav"/>
-    <break time="500"/>
-        <goto next="#menu1"/>
+      </prompt>
+
      </block>
 </form>
 
-<menu id="menu1" dtmf="true">
-
-    <audio src="static/menuF.wav"/>
-
-    <choice next="#form1"/>
-    <choice next="#form2"/>
-    <choice next="#form3"/>
-</menu>
-
- <catch event="noinput nomatch">
-        <audio src="static/inputF.wav"/>
-    <reprompt/>
- </catch>
 
 
- <catch event="noinput nomatch"  count="3" >
-   <audio src="static/responseF.wav"/>
-    <disconnect/>
- </catch>
-
-  <form id="form1">
-    <block>
-
-<audio src="static/form1F.wav"/>
-
- <break time="500"/>
-      <goto next="#furtherInstructions"/>
-    </block>
-  </form>
-
-  <form id="form2">
-    <block>
-
-<audio src="static/form2F.wav"/>
-
-  <break time="500"/>
-  <goto next="#furtherInstructions"/>
-    </block>
-  </form>
-
-  <form id="form3">
-    <block>
-<audio src="static/form3F.wav"/>
-
- <break time="500"/>
-  <goto next="#furtherInstructions"/>
-    </block>
-  </form>
 
 
-  <menu id="menu2" dtmf="true">
-
-<audio src="static/menu2F.wav"/>
-
-    <choice next="#menu1"/>
-    <choice next="#farewell"/>
-  </menu>
-
-
-  <form id="furtherInstructions">
-    <block>
-<audio src="static/respectsF.wav"/>
-
- <break time="500"/>
-      <goto next="#menu2"/>
-    </block>
-  </form>
-
-
-<form id="farewell">
-    <block>
-
-<audio src="static/farewellF.wav"/>
-
-      <disconnect/>
-    </block>
-  </form>
 
 {% endblock %}
