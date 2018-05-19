@@ -9,8 +9,9 @@
 
 <form id="intro">
      <block>
+       <prompt>
     <audio src="static/Intro.wav"/>
-    
+  </prompt>
      </block>
 </form>
 

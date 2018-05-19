@@ -11,7 +11,6 @@
      </block>
 </form>
 
-
 <menu id="menu" dtmf="true">
 <prompt><audio src="static/menuF.wav"/> </prompt>
 <choice next="#form1"/>
@@ -27,7 +26,7 @@
 
  <form id="form2">
     <block>
-      <prompt> <audio src="static/form1F.wav"/> </prompt>
+      <prompt> <audio src="static/form2F.wav"/> </prompt>
  <break time="500"/>
     </block>
   </form>
