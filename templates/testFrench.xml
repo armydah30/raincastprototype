@@ -23,7 +23,7 @@
        <prompt>
     <audio src="static/myform1.wav"/>
   </prompt>
-   <goto next="#intro"/>
+
      </block>
 </form>
 
@@ -32,7 +32,7 @@
        <prompt>
     <audio src="static/myform2.wav"/>
   </prompt>
-   <goto next="#intro"/>
+   
      </block>
 </form>
 
