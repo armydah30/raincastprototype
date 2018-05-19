@@ -7,26 +7,47 @@
   http://www.w3.org/TR/2007/REC-voicexml21-20070619/vxml.xsd">
 <property name="inputmodes" value="dtmf" />
 
-<form id="intro">
-     <block>
-       <prompt>
-    <audio src="static/Intro.wav"/>
-  </prompt>
-   <goto next="#menu"/>
-     </block>
-</form>
 
 <menu id="menu" dtmf="true">
-<prompt><audio src="static/menuF.wav"/> </prompt>
-<choice next="#intro"/>
-<choice next="#submit"/>
+  <prompt>
+    <audio src="static/langauge.wav"/>
+    <audio src="static/langaugeF.wav"/>
+  </prompt>
+   <choice next="#welcome"/>
+   <choice next="#submit"/>
 </menu>
 
 <form id="submit">
-<block>
- <submit next="/vxml2" />
-</block>
+   <block>
+     <submit next="/vxml2" />
+   </block>
 </form>
 
+<form id="welcome">
+     <block>
+       <prompt>
+            <audio src="static/welcome.wav"/>
+       </prompt>
+   <goto next="#locationmenu"/>
+     </block>
+</form>
+
+<menu id="locationmenu" dtmf="true">
+   <prompt><audio src="static/locationmenu.wav"/> </prompt>
+    <choice next="#optionTamale"/>
+    <choice next="#optionBolga"/>
+</menu>
+
+<menu id="optionTamale" dtmf="true">
+   <prompt><audio src="static/optionTamale.wav"/> </prompt>
+    <choice next="#locationmenu"/>
+    <choice next="/tamale"/>
+</menu>
+
+<menu id="optionBolga" dtmf="true">
+   <prompt><audio src="static/optionBolgatanga.wav"/> </prompt>
+    <choice next="#locationmenu"/>
+    <choice next="/bolgatanga"/>
+</menu>
 
 </vxml>

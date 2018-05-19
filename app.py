@@ -30,6 +30,14 @@ def vxml():
 def vxml2():
     return render_template('testFrench.xml')
 
+@app.route('/tamale')
+def tamale():
+    return render_template('tamale.xml')
+
+@app.route('/bolgatanga')
+def bolgatanga():
+    return render_template('bolgatanga.xml')
+
 @app.route('/login')
 def login():
     return render_template('login.html')

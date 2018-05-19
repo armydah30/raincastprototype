@@ -1,0 +1,41 @@
+{% extends "base.xml" %}
+
+{% block content %}
+<menu id="weathermenu" dtmf="true">
+   <prompt><audio src="static/weathermenu.wav"/> </prompt>
+    <choice next="#currentweather"/>
+    <choice next="#daysforecast"/>
+</menu>
+
+<form id="currentweather">
+     <block>
+       <prompt>
+            <audio src="static/currentweather.wav"/>
+       </prompt>
+   <goto next="#more"/>
+     </block>
+</form>
+
+<form id="daysforecast">
+     <block>
+       <prompt>
+            <audio src="static/daysforecast.wav"/>
+       </prompt>
+   <goto next="#more"/>
+     </block>
+</form>
+
+<menu id="more" dtmf="true">
+   <prompt><audio src="static/more.wav"/> </prompt>
+    <choice next="#weathermenu"/>
+    <choice next="#goodbye"/>
+</menu>
+
+<form id="goodbye">
+     <block>
+       <prompt>
+            <audio src="static/goodbye.wav"/>
+       </prompt>
+     </block>
+</form>
+{% endblock %}

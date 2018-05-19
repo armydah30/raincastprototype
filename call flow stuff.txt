@@ -1,0 +1,7 @@
+Welcome to RainCast. We provide you with accurate weather forecasts. Please Select your location.
+
+For Tamale, press 1. For Bolgatanga, press 2.
+
+You have selected your location as Tamale. To change your option press 1. To continue, press 2.
+
+You have selected your location as Bolgatanga. To change your option press 1. To continue, press 2.
