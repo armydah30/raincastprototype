@@ -11,9 +11,9 @@
 </form>
 
 <menu id="menu1" dtmf="true">
-    <prompt>
+
     <audio src="static/menuF.wav"/>
-    </prompt>
+
     <choice next="#form1"/>
     <choice next="#form2"/>
     <choice next="#form3"/>
@@ -32,9 +32,9 @@
 
   <form id="form1">
     <block>
-      <prompt>
+
 <audio src="static/form1F.wav"/>
-</prompt>
+
  <break time="500"/>
       <goto next="#furtherInstructions"/>
     </block>
@@ -42,9 +42,9 @@
 
   <form id="form2">
     <block>
-      <prompt>
+
 <audio src="static/form2F.wav"/>
-</prompt>
+
   <break time="500"/>
   <goto next="#furtherInstructions"/>
     </block>
@@ -52,9 +52,8 @@
 
   <form id="form3">
     <block>
-      <prompt>
 <audio src="static/form3F.wav"/>
-</prompt>
+
  <break time="500"/>
   <goto next="#furtherInstructions"/>
     </block>
@@ -62,9 +61,9 @@
 
 
   <menu id="menu2" dtmf="true">
-    <prompt>
+
 <audio src="static/menu2F.wav"/>
-    </prompt>
+
     <choice next="#menu1"/>
     <choice next="#farewell"/>
   </menu>
@@ -72,9 +71,8 @@
 
   <form id="furtherInstructions">
     <block>
-      <prompt>
 <audio src="static/respectsF.wav"/>
-</prompt>
+
  <break time="500"/>
       <goto next="#menu2"/>
     </block>
@@ -83,9 +81,9 @@
 
 <form id="farewell">
     <block>
-      <prompt>
+
 <audio src="static/farewellF.wav"/>
-</prompt>
+
       <disconnect/>
     </block>
   </form>
