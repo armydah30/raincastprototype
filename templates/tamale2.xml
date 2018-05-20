@@ -31,7 +31,11 @@
 <form id="daysforecast">
      <block>
        <prompt>
-            <audio src="static/daysforecastF.wav"/>
+            <audio src="static/{{context.city_weather.id}}F.wav"/>
+            <audio src="static/currenttempF.wav"/>
+            <audio src="static/{{context.city_weather.fdigit}}F.wav"/>
+            <audio src="static/{{context.city_weather.sdigit}}F.wav"/>
+            <audio src="static/degreecelsiusF.wav"/>
        </prompt>
    <goto next="#more"/>
      </block>
