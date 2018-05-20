@@ -3,23 +3,28 @@
 {% block body %}
 
 </br>
-<div class ="message" >
+
+ <div class ="message" >
   <div class = "text-center">
-   <span  id="city"></span>
-     <span id="country"></span>
+   <span  id="city">{{context.city_weather.city}}</span>
+     <span id="country">{{context.city_weather.country}}</span>
    </div>
   <div class = "text-center">
-     <button id = "temp" class="w3-button w3-white" >
+     <button id = "temp" class="w3-button w3-white" >{{context.city_weather.temp}}
       </button>
    </div>
-  <div class = "text-center" id = "skye">
+  <div class = "text-center" id = "skye">{{context.city_weather.skye}}
    </div>
-  <div class = "text-center" id = "weatherIcon">
+  <div class = "text-center" id = "weatherIcon"><img src = "http://openweathermap.org/img/w/{{context.city_weather.icon}}.png"  alt = "weather" >
+   </div>
   </div>
  </div>
+
 </br>
+
 <h1 class="text-center"> - </h1>
 </br>
+
 <div class ="message">
    <div class = "text-center">
     <span  id="city2"></span>
@@ -42,7 +47,7 @@
 var apib = "https://api.openweathermap.org/data/2.5/weather?lat=10.7833&lon=-0.8500&units=metric&appid=454d3e3138f204980589ae958b2a9728";
 var apit = "https://api.openweathermap.org/data/2.5/weather?lat=9.3999984&lon=-0.8499966&units=metric&appid=454d3e3138f204980589ae958b2a9728";
 var tempUnit = 'C';
-var currentTempInCelsius;
+var currentTempInCelsius = {{context.temp}};
 var currentTempInCelsius2;
 var tempinF = "";
 var tempinF1 = "";
@@ -85,21 +90,6 @@ $( document ).ready(function(){
 });
 })
 
-function getWeather() {
-  $.ajax({
-    url: apib,
-    success: function (result) {
-        console.log(result);
-      $("#city").text(result.name + ", ");
-      $("#country").text(result.sys.country);
-   $("#weatherIcon").html("<img src = 'http://openweathermap.org/img/w/"  + result.weather[0].icon + ".png ' + alt = 'weather' >");
-      $("#skye").text(result.weather[0].description);
-      currentTempInCelsius = Math.round(result.main.temp);
-      $("#temp").text(currentTempInCelsius + " " + String.fromCharCode(176) + tempUnit );
-    }
-  });
-
-}
 function getWeathert() {
   $.ajax({
     url: apit,
@@ -118,3 +108,20 @@ function getWeathert() {
 
 </script>
 {% endblock %}
+
+@app.route('/tamale')
+def tamale():
+        url = 'https://api.openweathermap.org/data/2.5/weather?lat=10.7833&lon=-0.8500&units=metric&appid=454d3e3138f204980589ae958b2a9728'
+
+        result = requests.get(url).json()
+        print(result)
+        temp = round(result['main']['temp'])
+        city_weather = {
+           'city':  result['name'],
+           'country': result['sys']['country'],
+           'icon': result['weather'][0]['icon'],
+           'skye': result['weather'][0]['description'],
+           'temp': temp,
+        }
+        context = {'city_weather': city_weather}
+        return render_template('tamale.xml', context=context)

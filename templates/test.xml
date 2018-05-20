@@ -14,7 +14,7 @@
     <audio src="static/languageF.wav"/>
   </prompt>
    <choice next="#welcome"/>
-   <choice next="#submit"/>
+   <choice next="/vxml2"/>
 </menu>
 
 <form id="submit">

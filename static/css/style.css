@@ -29,6 +29,18 @@
     background-color: #f1f1f1;
 
 }
+.message{
+  color: black;
+  text-align: center;
+  width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+ padding: 20px 40px 20px 40px;
+
+  border-width: 1.5px;
+  background-color:#2196F3;
+
+}
 
 .menu{
   font-size: 12px;

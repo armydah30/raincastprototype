@@ -19,10 +19,10 @@
     <choice next="#daysforecast"/>
 </menu>
 
-<form id="currentweather">
+<form id="currentweather" >
      <block>
        <prompt>
-            <audio src="static/currentweather.wav"/>
+            <audio src="static/{{context.city_weather.id}}.wav"/>
        </prompt>
    <goto next="#more"/>
      </block>
