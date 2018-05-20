@@ -7,8 +7,6 @@ import json
 app = Flask(__name__)
 app.debug = False
 
-
-
 #Index
 @app.route('/')
 def index():

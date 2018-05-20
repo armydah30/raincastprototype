@@ -23,6 +23,10 @@
      <block>
        <prompt>
             <audio src="static/{{context.city_weather.id}}.wav"/>
+            <audio src="static/currenttemp.wav"/>
+            <audio src="static/{{context.city_weather.fdigit}}.wav"/>
+            <audio src="static/{{context.city_weather.sdigit}}.wav"/>
+            <audio src="static/degreecelsius.wav"/>
        </prompt>
    <goto next="#more"/>
      </block>
