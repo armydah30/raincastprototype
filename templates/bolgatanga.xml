@@ -32,10 +32,67 @@
      </block>
 </form>
 
-<form id="daysforecast">
+<menu id="daysforecast" dtmf="true">
+   <prompt>
+     <audio src="static/myforecasts.wav"/>
+    </prompt>
+    <choice next="#nextday"/>
+    <choice next="#daytwo"/>
+    <choice next="#daythree"/>
+    <choice next="#dayfour"/>
+    <choice next="#dayfive"/>
+    <choice next="#allforecasts"/>
+</menu>
+
+<form id="nextday">
      <block>
        <prompt>
-            <audio src="static/daysforecast.wav"/>
+            <audio src="static/my1.wav"/>
+       </prompt>
+   <goto next="#more"/>
+     </block>
+</form>
+
+<form id="daytwo">
+     <block>
+       <prompt>
+            <audio src="static/my2.wav"/>
+       </prompt>
+   <goto next="#more"/>
+     </block>
+</form>
+
+<form id="daythree">
+     <block>
+       <prompt>
+            <audio src="static/my3.wav"/>
+       </prompt>
+   <goto next="#more"/>
+     </block>
+</form>
+
+<form id="dayfour">
+     <block>
+       <prompt>
+            <audio src="static/my4.wav"/>
+       </prompt>
+   <goto next="#more"/>
+     </block>
+</form>
+
+<form id="dayfive">
+     <block>
+       <prompt>
+            <audio src="static/my5.wav"/>
+       </prompt>
+   <goto next="#more"/>
+     </block>
+</form>
+
+<form id="allforecasts">
+     <block>
+       <prompt>
+            <audio src="static/my6.wav"/>
        </prompt>
    <goto next="#more"/>
      </block>
