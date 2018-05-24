@@ -13,22 +13,13 @@
 
 <menu id="weathermenu" dtmf="true">
    <prompt>
-     <audio src="static/transcriptF.wav"/>
+     <audio src="static/forecastmenuF.wav"/>
     </prompt>
     <choice next="#currentweather"/>
-    <choice next="#daysforecast"/>
+    <choice next="#forecast1"/>
 </menu>
 
-<form id="currentweather">
-     <block>
-       <prompt>
-            <audio src="static/currentweatherF.wav"/>
-       </prompt>
-   <goto next="#more"/>
-     </block>
-</form>
-
-<form id="daysforecast">
+<form id="currentweather" >
      <block>
        <prompt>
             <audio src="static/{{context.city_weather.id}}F.wav"/>
@@ -41,9 +32,136 @@
      </block>
 </form>
 
-<menu id="more" dtmf="true">
+<menu id="forecast1" dtmf="true">
+   <prompt>
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day1_time1}}F.wav"/>
+        <audio src="static/{{context.city_weather.day1_time_of_day1}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_1t1}}F.wav"/>
 
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day1_time2}}F.wav"/>
+        <audio src="static/{{context.city_weather.day1_time_of_day2}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_1t2}}F.wav"/>
+
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day1_time3}}F.wav"/>
+        <audio src="static/{{context.city_weather.day1_time_of_day3}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_1t3}}F.wav"/>
+
+
+        <audio src="static/moreforecastsF.wav"/>
+    </prompt>
+    <choice next="#forecast2"/>
+    <choice next="#goodbye"/>
+</menu>
+
+<menu id="forecast2" dtmf="true">
+   <prompt>
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day2_time1}}F.wav"/>
+        <audio src="static/{{context.city_weather.day2_time_of_day1}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_2t1}}F.wav"/>
+
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day2_time2}}F.wav"/>
+        <audio src="static/{{context.city_weather.day2_time_of_day2}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_2t2}}F.wav"/>
+
+
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day2_time3}}F.wav"/>
+        <audio src="static/{{context.city_weather.day2_time_of_day3}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_2t3}}F.wav"/>
+
+
+        <audio src="static/moreforecastsF.wav"/>
+    </prompt>
+    <choice next="#forecast3"/>
+    <choice next="#goodbye"/>
+</menu>
+
+<menu id="forecast3" dtmf="true">
+   <prompt>
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day3_time1}}F.wav"/>
+        <audio src="static/{{context.city_weather.day3_time_of_day1}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_3t1}}F.wav"/>
+
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day3_time2}}F.wav"/>
+        <audio src="static/{{context.city_weather.day3_time_of_day2}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_3t2}}F.wav"/>
+
+        <audio src="static/for.wav"/>
+        <audio src="static/{{context.city_weather.day3_time3}}F.wav"/>
+        <audio src="static/{{context.city_weather.day3_time_of_day3}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_3t3}}F.wav"/>
+
+
+        <audio src="static/moreforecastsF.wav"/>
+    </prompt>
+    <choice next="#forecast4"/>
+    <choice next="#goodbye"/>
+</menu>
+
+<menu id="forecast4" dtmf="true">
+   <prompt>
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day4_time1}}F.wav"/>
+        <audio src="static/{{context.city_weather.day4_time_of_day1}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_4t1}}F.wav"/>
+
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day4_time2}}F.wav"/>
+        <audio src="static/{{context.city_weather.day4_time_of_day2}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_4t2}}F.wav"/>
+
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day4_time3}}F.wav"/>
+        <audio src="static/{{context.city_weather.day4_time_of_day3}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_4t3}}F.wav"/>
+
+
+        <audio src="static/moreforecastsF.wav"/>
+    </prompt>
+    <choice next="#forecast5"/>
+    <choice next="#goodbye"/>
+</menu>
+
+<menu id="forecast5" dtmf="true">
+   <prompt>
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day5_time1}}F.wav"/>
+        <audio src="static/{{context.city_weather.day5_time_of_day1}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_5t1}}F.wav"/>
+
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day5_time2}}F.wav"/>
+        <audio src="static/{{context.city_weather.day5_time_of_day2}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_5t2}}F.wav"/>
+
+        <audio src="static/forF.wav"/>
+        <audio src="static/{{context.city_weather.day5_time3}}F.wav"/>
+        <audio src="static/{{context.city_weather.day5_time_of_day3}}F.wav"/>
+        <audio src="static/{{context.city_weather.weather_Condition_Day_5t3}}F.wav"/>
+
+
+        <audio src="static/moreforecastsF.wav"/>
+    </prompt>
+    <choice next="#again"/>
+    <choice next="#goodbye"/>
+</menu>
+
+
+<menu id="more" dtmf="true">
    <prompt><audio src="static/moreF.wav"/> </prompt>
+    <choice next="#weathermenu"/>
+    <choice next="#goodbye"/>
+</menu>
+
+<menu id="again" dtmf="true">
+   <prompt><audio src="static/againF.wav"/> </prompt>
     <choice next="#weathermenu"/>
     <choice next="#goodbye"/>
 </menu>

@@ -38,30 +38,21 @@
         <audio src="static/{{context.city_weather.day1_time1}}.wav"/>
         <audio src="static/{{context.city_weather.day1_time_of_day1}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_1t1}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day1_temp1_Morn}}.wav"/>
-        <audio src="static/{{context.city_weather.day1_temp2_Morn}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
         <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day1_time2}}.wav"/>
         <audio src="static/{{context.city_weather.day1_time_of_day2}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_1t2}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day1_temp1_Noon}}.wav"/>
-        <audio src="static/{{context.city_weather.day1_temp2_Noon}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
         <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day1_time3}}.wav"/>
         <audio src="static/{{context.city_weather.day1_time_of_day3}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_1t3}}.wav"/>
         <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day1_temp1_Even}}.wav"/>
-        <audio src="static/{{context.city_weather.day1_temp2_Even}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
 
         <audio src="static/moreforecasts.wav"/>
     </prompt>
-    <choice next="#credits"/>
+    <choice next="#forecast2"/>
     <choice next="#goodbye"/>
 </menu>
 
@@ -104,26 +95,17 @@
         <audio src="static/{{context.city_weather.day3_time1}}.wav"/>
         <audio src="static/{{context.city_weather.day3_time_of_day1}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_3t1}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day3_temp1_Morn}}.wav"/>
-        <audio src="static/{{context.city_weather.day3_temp2_Morn}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
         <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day3_time2}}.wav"/>
         <audio src="static/{{context.city_weather.day3_time_of_day2}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_3t2}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day3_temp1_Noon}}.wav"/>
-        <audio src="static/{{context.city_weather.day3_temp2_Noon}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
         <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day3_time3}}.wav"/>
         <audio src="static/{{context.city_weather.day3_time_of_day3}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_3t3}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day3_temp1_Even}}.wav"/>
-        <audio src="static/{{context.city_weather.day3_temp2_Even}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
 
         <audio src="static/moreforecasts.wav"/>
     </prompt>
@@ -137,26 +119,17 @@
         <audio src="static/{{context.city_weather.day4_time1}}.wav"/>
         <audio src="static/{{context.city_weather.day4_time_of_day1}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_4t1}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day4_temp1_Morn}}.wav"/>
-        <audio src="static/{{context.city_weather.day4_temp2_Morn}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
         <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day4_time2}}.wav"/>
         <audio src="static/{{context.city_weather.day4_time_of_day2}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_4t2}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day4_temp1_Noon}}.wav"/>
-        <audio src="static/{{context.city_weather.day4_temp2_Noon}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
         <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day4_time3}}.wav"/>
         <audio src="static/{{context.city_weather.day4_time_of_day3}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_4t3}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day4_temp1_Even}}.wav"/>
-        <audio src="static/{{context.city_weather.day4_temp2_Even}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
 
         <audio src="static/moreforecasts.wav"/>
     </prompt>
@@ -170,26 +143,17 @@
         <audio src="static/{{context.city_weather.day5_time1}}.wav"/>
         <audio src="static/{{context.city_weather.day5_time_of_day1}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_5t1}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day5_temp1_Morn}}.wav"/>
-        <audio src="static/{{context.city_weather.day5_temp2_Morn}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
         <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day5_time2}}.wav"/>
         <audio src="static/{{context.city_weather.day5_time_of_day2}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_5t2}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day5_temp1_Noon}}.wav"/>
-        <audio src="static/{{context.city_weather.day5_temp2_Noon}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
         <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day5_time3}}.wav"/>
         <audio src="static/{{context.city_weather.day5_time_of_day3}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_5t3}}.wav"/>
-        <audio src="static/currenttemp.wav"/>
-        <audio src="static/{{context.city_weather.day5_temp1_Even}}.wav"/>
-        <audio src="static/{{context.city_weather.day5_temp2_Even}}.wav"/>
-        <audio src="static/degreecelsius.wav"/>
+
 
         <audio src="static/moreforecasts.wav"/>
     </prompt>
