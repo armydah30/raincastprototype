@@ -5,3 +5,7 @@ For Tamale, press 1. For Bolgatanga, press 2.
 You have selected your location as Tamale. To change your option press 1. To continue, press 2.
 
 You have selected your location as Bolgatanga. To change your option press 1. To continue, press 2.
+
+to get the forecasts for monday press 1
+
+lastforecast: These are all the current forecasts. To listen again, press 1, to quit, press 2.

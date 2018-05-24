@@ -492,12 +492,12 @@ def tamale():
            'day3_temp2_Noon': tday32n,
            'day3_temp1_Even': tday31e,
            'day3_temp2_Even': tday32e,
-           'weather_Condition_Day_1t1': wCDay_3t1,
-           'weather_Condition_Day_1t2': wCDay_3t2,
-           'weather_Condition_Day_1t3': wCDay_3t3,
-           'day1_time_of_day1': day3_tod1,
-           'day1_time_of_day2': day3_tod2,
-           'day1_time_of_day3': day3_tod3,
+           'weather_Condition_Day_3t1': wCDay_3t1,
+           'weather_Condition_Day_3t2': wCDay_3t2,
+           'weather_Condition_Day_3t3': wCDay_3t3,
+           'day3_time_of_day1': day3_tod1,
+           'day3_time_of_day2': day3_tod2,
+           'day3_time_of_day3': day3_tod3,
 
            #Day4 Forecast Data
            'day4_time1': day4_t1,
@@ -1497,12 +1497,12 @@ def tamale2():
            'day3_temp2_Noon': tday32n,
            'day3_temp1_Even': tday31e,
            'day3_temp2_Even': tday32e,
-           'weather_Condition_Day_1t1': wCDay_3t1,
-           'weather_Condition_Day_1t2': wCDay_3t2,
-           'weather_Condition_Day_1t3': wCDay_3t3,
-           'day1_time_of_day1': day3_tod1,
-           'day1_time_of_day2': day3_tod2,
-           'day1_time_of_day3': day3_tod3,
+           'weather_Condition_Day_3t1': wCDay_3t1,
+           'weather_Condition_Day_3t2': wCDay_3t2,
+           'weather_Condition_Day_3t3': wCDay_3t3,
+           'day3_time_of_day1': day3_tod1,
+           'day3_time_of_day2': day3_tod2,
+           'day3_time_of_day3': day3_tod3,
 
            #Day4 Forecast Data
            'day4_time1': day4_t1,
@@ -1995,12 +1995,12 @@ def bolgatanga2():
            'day3_temp2_Noon': tday32n,
            'day3_temp1_Even': tday31e,
            'day3_temp2_Even': tday32e,
-           'weather_Condition_Day_1t1': wCDay_3t1,
-           'weather_Condition_Day_1t2': wCDay_3t2,
-           'weather_Condition_Day_1t3': wCDay_3t3,
-           'day1_time_of_day1': day3_tod1,
-           'day1_time_of_day2': day3_tod2,
-           'day1_time_of_day3': day3_tod3,
+           'weather_Condition_Day_3t1': wCDay_3t1,
+           'weather_Condition_Day_3t2': wCDay_3t2,
+           'weather_Condition_Day_3t3': wCDay_3t3,
+           'day3_time_of_day1': day3_tod1,
+           'day3_time_of_day2': day3_tod2,
+           'day3_time_of_day3': day3_tod3,
 
            #Day4 Forecast Data
            'day4_time1': day4_t1,
@@ -2039,11 +2039,6 @@ def bolgatanga2():
         print(city_weather)
         context = {'city_weather': city_weather}
         return render_template('bolgatanga2.xml', context=context)
-
-
-@app.route('/login')
-def login():
-    return render_template('login.html')
 
 
 

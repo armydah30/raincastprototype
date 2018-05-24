@@ -34,21 +34,17 @@
 
 <menu id="forecast1" dtmf="true">
    <prompt>
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day1_time1}}F.wav"/>
         <audio src="static/{{context.city_weather.day1_time_of_day1}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_1t1}}F.wav"/>
 
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day1_time2}}F.wav"/>
         <audio src="static/{{context.city_weather.day1_time_of_day2}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_1t2}}F.wav"/>
 
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day1_time3}}F.wav"/>
         <audio src="static/{{context.city_weather.day1_time_of_day3}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_1t3}}F.wav"/>
-
 
         <audio src="static/moreforecastsF.wav"/>
     </prompt>
@@ -58,22 +54,17 @@
 
 <menu id="forecast2" dtmf="true">
    <prompt>
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day2_time1}}F.wav"/>
         <audio src="static/{{context.city_weather.day2_time_of_day1}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_2t1}}F.wav"/>
 
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day2_time2}}F.wav"/>
         <audio src="static/{{context.city_weather.day2_time_of_day2}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_2t2}}F.wav"/>
 
-
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day2_time3}}F.wav"/>
         <audio src="static/{{context.city_weather.day2_time_of_day3}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_2t3}}F.wav"/>
-
 
         <audio src="static/moreforecastsF.wav"/>
     </prompt>
@@ -83,21 +74,18 @@
 
 <menu id="forecast3" dtmf="true">
    <prompt>
-        <audio src="static/forF.wav"/>
+
         <audio src="static/{{context.city_weather.day3_time1}}F.wav"/>
         <audio src="static/{{context.city_weather.day3_time_of_day1}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_3t1}}F.wav"/>
 
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day3_time2}}F.wav"/>
         <audio src="static/{{context.city_weather.day3_time_of_day2}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_3t2}}F.wav"/>
 
-        <audio src="static/for.wav"/>
         <audio src="static/{{context.city_weather.day3_time3}}F.wav"/>
         <audio src="static/{{context.city_weather.day3_time_of_day3}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_3t3}}F.wav"/>
-
 
         <audio src="static/moreforecastsF.wav"/>
     </prompt>
@@ -107,21 +95,17 @@
 
 <menu id="forecast4" dtmf="true">
    <prompt>
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day4_time1}}F.wav"/>
         <audio src="static/{{context.city_weather.day4_time_of_day1}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_4t1}}F.wav"/>
 
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day4_time2}}F.wav"/>
         <audio src="static/{{context.city_weather.day4_time_of_day2}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_4t2}}F.wav"/>
 
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day4_time3}}F.wav"/>
         <audio src="static/{{context.city_weather.day4_time_of_day3}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_4t3}}F.wav"/>
-
 
         <audio src="static/moreforecastsF.wav"/>
     </prompt>
@@ -129,30 +113,24 @@
     <choice next="#goodbye"/>
 </menu>
 
-<menu id="forecast5" dtmf="true">
+<form id="forecast5">
    <prompt>
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day5_time1}}F.wav"/>
         <audio src="static/{{context.city_weather.day5_time_of_day1}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_5t1}}F.wav"/>
 
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day5_time2}}F.wav"/>
         <audio src="static/{{context.city_weather.day5_time_of_day2}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_5t2}}F.wav"/>
 
-        <audio src="static/forF.wav"/>
         <audio src="static/{{context.city_weather.day5_time3}}F.wav"/>
         <audio src="static/{{context.city_weather.day5_time_of_day3}}F.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_5t3}}F.wav"/>
 
-
-        <audio src="static/moreforecastsF.wav"/>
     </prompt>
-    <choice next="#again"/>
-    <choice next="#goodbye"/>
-</menu>
-
+    <goto next="#again"/>
+  </block>
+</form>
 
 <menu id="more" dtmf="true">
    <prompt><audio src="static/moreF.wav"/> </prompt>
@@ -161,8 +139,10 @@
 </menu>
 
 <menu id="again" dtmf="true">
-   <prompt><audio src="static/againF.wav"/> </prompt>
-    <choice next="#weathermenu"/>
+   <prompt>
+     <audio src="static/lastforecastF.wav"/>
+   </prompt>
+    <choice next="#forecast1"/>
     <choice next="#goodbye"/>
 </menu>
 
@@ -173,6 +153,16 @@
        </prompt>
      </block>
 </form>
+
+<nomatch>
+       <audio src="static/nomatchF.wav"/>
+  <reprompt/>
+</nomatch>
+
+<noinput>
+       <audio src="static/noinputF.wav"/>
+  <reprompt/>
+</noinput>
 
 
 {% endblock %}
