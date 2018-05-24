@@ -92,7 +92,7 @@ function getWeather() {
         console.log(result);
       $("#city").text(result.name + ", ");
       $("#country").text(result.sys.country);
-   $("#weatherIcon").html("<img src = 'http://openweathermap.org/img/w/"  + result.weather[0].icon + ".png ' + alt = 'weather' >");
+   $("#weatherIcon").html("<img src = 'https://openweathermap.org/img/w/"  + result.weather[0].icon + ".png ' + alt = 'weather' >");
       $("#skye").text(result.weather[0].description);
       currentTempInCelsius = Math.round(result.main.temp);
       $("#temp").text(currentTempInCelsius + " " + String.fromCharCode(176) + tempUnit );
@@ -107,7 +107,7 @@ function getWeathert() {
         console.log(result);
       $("#city2").text(result.name + ", ");
       $("#country2").text(result.sys.country);
-    $("#weatherIcon2").html("<img src = 'http://openweathermap.org/img/w/"  + result.weather[0].icon + ".png ' + alt = 'weather' >");
+    $("#weatherIcon2").html("<img src = 'https://openweathermap.org/img/w/"  + result.weather[0].icon + ".png ' + alt = 'weather' >");
       $("#skye2").text(result.weather[0].description);
       currentTempInCelsius2 = Math.round(result.main.temp);
       $("#temp2").text(currentTempInCelsius2 + " " + String.fromCharCode(176) + tempUnit1 );
