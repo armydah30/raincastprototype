@@ -169,7 +169,7 @@
    <reprompt/>
  </noinput>
 
- <noinput count="2">
+ <noinput count="3">
        <audio src="static/noresponse.wav"/>
     <disconnect/>
  </noinput>
