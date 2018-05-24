@@ -139,7 +139,7 @@
     <choice next="#goodbye"/>
 </menu>
 
-<form id="again" dtmf="true">
+<form id="again">
    <prompt>
      <audio src="static/lastforecast.wav"/>
    </prompt>
