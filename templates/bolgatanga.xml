@@ -13,7 +13,7 @@
 
 <menu id="weathermenu" dtmf="true">
    <prompt>
-     <audio src="static/forecastmenu.wav"/>
+     <audio src="static/raincastmenu.wav"/>
     </prompt>
     <choice next="#currentweather"/>
     <choice next="#forecast1"/>
