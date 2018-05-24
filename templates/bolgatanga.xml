@@ -143,10 +143,12 @@
 </menu>
 
 <form id="again">
+ <block>
    <prompt>
      <audio src="static/lastforecast.wav"/>
    </prompt>
     <goto next="#goodbye"/>
+  </block>
 </form>
 
 <form id="goodbye">
@@ -163,7 +165,7 @@
  </nomatch>
 
  <noinput>
-        <audio src="static/noinput.wav"/>
+      <audio src="static/noinput.wav"/>
    <reprompt/>
  </noinput>
 

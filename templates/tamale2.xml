@@ -139,10 +139,12 @@
 </menu>
 
 <form id="again">
+  <block>
    <prompt>
      <audio src="static/lastforecastF.wav"/>
    </prompt>
     <goto next="#goodbye"/>
+  </block>
 </form>
 
 <form id="goodbye">
