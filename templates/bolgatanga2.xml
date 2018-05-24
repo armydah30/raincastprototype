@@ -138,13 +138,12 @@
     <choice next="#goodbye"/>
 </menu>
 
-<menu id="again" dtmf="true">
+<form id="again" dtmf="true">
    <prompt>
      <audio src="static/lastforecastF.wav"/>
    </prompt>
-    <choice next="#forecast1"/>
-    <choice next="#goodbye"/>
-</menu>
+    <goto next="#goodbye"/>
+</form>
 
 <form id="goodbye">
      <block>

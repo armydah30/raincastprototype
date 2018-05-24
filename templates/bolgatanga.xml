@@ -46,7 +46,9 @@
         <audio src="static/{{context.city_weather.day1_time_of_day3}}.wav"/>
         <audio src="static/{{context.city_weather.weather_Condition_Day_1t3}}.wav"/>
 
-        <audio src="static/moreforecasts.wav"/>
+    </prompt>
+    <prompt>
+         <audio src="static/moreforecasts.wav"/>
     </prompt>
     <choice next="#forecast2"/>
     <choice next="#goodbye"/>
@@ -140,13 +142,12 @@
     <choice next="#goodbye"/>
 </menu>
 
-<menu id="again" dtmf="true">
+<form id="again" dtmf="true">
    <prompt>
      <audio src="static/lastforecast.wav"/>
    </prompt>
-    <choice next="#forecast1"/>
-    <choice next="#goodbye"/>
-</menu>
+    <goto next="#goodbye"/>
+</form>
 
 <form id="goodbye">
      <block>
