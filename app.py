@@ -6,7 +6,9 @@ import json
 import time
 import datetime
 
+
 app = Flask(__name__)
+#Debug
 app.debug = False
 
 #Index
@@ -2041,8 +2043,8 @@ def bolgatanga2():
         return render_template('bolgatanga2.xml', context=context)
 
 
-
+#For running the Application
 if __name__ == '__main__':
-    #app.run() --for localhost
-	port = int(os.environ.get('PORT', 5000)) #The port to be listening to — hence, the URL must be <hostname>:<port>/ inorder to send the request to this program
+# For running the application on Heroku. Comment out the two lines below and replace with app.run() to run the application on local server.
+	port = int(os.environ.get('PORT', 5000)) #The port to be listening to
 	app.run(host='0.0.0.0', port=port)#Start listening
